@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discipleship Devotionals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Discipleship Devotionals</h1>
+            <div class="nav-links">
+                <a href="dashboard.html">Home</a>
+                <a href="series.html">Devotional Series</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="devotional-header">
+            <h1>Welcome to Discipleship Devotionals</h1>
+            <p class="series-description">Explore our collection of devotionals designed to deepen your walk with Christ</p>
+        </section>
+
+        <div class="series-grid">
+            <div class="series-card">
+                <h3>Call to Discipleship</h3>
+                <p>A 7-day journey exploring Jesus' invitation to follow Him</p>
+                <a href="series/call-to-discipleship-intro.html" class="cta-button">Start Journey</a>
+            </div>
+            <div class="series-card">
+                <h3>Restoration</h3>
+                <p>A 7-day journey through Peter's story of failure and restoration</p>
+                <a href="series/restoration.html" class="cta-button">Start Journey</a>
+            </div>
+            <div class="series-card">
+                <h3>Community</h3>
+                <p>A 7-day journey exploring the importance of Christian community</p>
+                <a href="series/community.html" class="cta-button">Start Journey</a>
+            </div>
+            <div class="series-card">
+                <h3>Cost</h3>
+                <p>A 7-day journey examining the cost of following Jesus</p>
+                <a href="series/cost.html" class="cta-button">Start Journey</a>
+            </div>
+            <div class="series-card">
+                <h3>Purpose</h3>
+                <p>A 7-day journey discovering God's purpose for your life</p>
+                <a href="series/purpose.html" class="cta-button">Start Journey</a>
+            </div>
+            <div class="series-card">
+                <h3>Fruit</h3>
+                <p>A 7-day journey exploring the fruit of the Spirit</p>
+                <a href="series/fruit.html" class="cta-button">Start Journey</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 HopeGraceFaith. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Check if user is authenticated
+        const isAuthenticated = localStorage.getItem('user') !== null;
+        
+        // If not authenticated, redirect to auth page
+        if (!isAuthenticated) {
+            window.location.href = 'auth.html';
+        }
+    </script>
+</body>
+</html>

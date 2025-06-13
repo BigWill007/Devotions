@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discipleship Devotionals</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Discipleship Devotions</title>
     <style>
         body {
             margin: 0;
@@ -35,29 +31,8 @@
         </div>
     </div>
     <script>
-        // Check if user is authenticated
-        const isAuthenticated = localStorage.getItem('user') !== null;
-        
-        // If not authenticated, redirect to auth page
-        if (!isAuthenticated) {
-            window.location.href = 'auth.html';
-        } else {
-            // If authenticated, redirect to dashboard
-            window.location.href = 'dashboard.html';
-        }
+        // Redirect to auth page
+        window.location.href = 'auth.html';
     </script>
-</body>
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Discipleship Devotionals. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
