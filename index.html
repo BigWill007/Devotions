@@ -9,96 +9,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .introduction-text {
-            margin: 20px 0;
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+        }
+        .redirect-container {
             text-align: center;
+            padding: 2rem;
         }
-        .introduction-text h2 {
+        .redirect-message {
+            font-size: 1.5rem;
             color: #333;
-            margin-bottom: 2rem;
-        }
-        .introduction-text p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-            color: #666;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Discipleship Devotionals</h1>
-            <div class="nav-links">
-                <a href="#introduction" class="active">Introduction</a>
-                <a href="#series">Devotional Series</a>
-                <a href="#contact">Contact</a>
-            </div>
+    <div class="redirect-container">
+        <div class="redirect-message">
+            <p>Redirecting to login page...</p>
         </div>
-    </nav>
-
-    <main class="container">
-        <section class="introduction-text">
-            <h2>Welcome to Discipleship Devotionals</h2>
-            <p>This collection brings together six powerful devotional series exploring different aspects of discipleship. Each section offers a 7-day journey that will deepen your understanding of what it means to follow Jesus Christ. Whether you're just beginning your faith journey or have been walking with Christ for many years, these devotionals provide practical insights, biblical wisdom, and daily applications to strengthen your walk with God.</p>
-            <p>The devotionals are arranged to guide you through a comprehensive understanding of discipleship - from the initial call to follow Jesus, through the community aspects of faith, the costs involved, the fruit produced, the path to restoration when we fail, and finally to living a life of purpose and impact.</p>
-            <p>Each section contains its own introduction, daily readings with Scripture passages, devotional reflections, questions for personal application, guided prayers, and practical steps to take. Take your time with each devotional, allowing God's Word to transform your understanding and practice of discipleship.</p>
-        </section>
-        <section id="introduction" class="hero">
-            <h2>Welcome to Discipleship Devotionals</h2>
-            <p>Explore six powerful devotional series that will deepen your understanding of what it means to follow Jesus Christ.</p>
-            <button class="cta-button">Start Your Journey</button>
-        </section>
-
-        <section id="series" class="series-grid">
-            <article class="series-card">
-                <h3>The Call to Discipleship</h3>
-                <p>Based on Matthew 4:12-22</p>
-                <p>Explore Jesus' invitation to follow Him through a 7-day journey.</p>
-                <a href="series/call-to-discipleship-intro.html" class="read-more">Read More</a>
-            </article>
-            
-            <article class="series-card">
-                <h3>The Community of Discipleship</h3>
-                <p>Based on Mark 3</p>
-                <p>Discover the importance of following Jesus in community.</p>
-                <a href="series/community.html" class="read-more">Read More</a>
-            </article>
-
-            <article class="series-card">
-                <h3>The Cost of Discipleship</h3>
-                <p>Based on Matthew 16</p>
-                <p>Examine what discipleship truly costs us.</p>
-                <a href="series/cost.html" class="read-more">Read More</a>
-            </article>
-
-            <article class="series-card">
-                <h3>The Fruit of Discipleship</h3>
-                <p>Based on John 15:1-17</p>
-                <p>Learn about bearing spiritual fruit as disciples.</p>
-                <a href="series/fruit.html" class="read-more">Read More</a>
-            </article>
-
-            <article class="series-card">
-                <h3>The Road to Restoration</h3>
-                <p>Based on John 21</p>
-                <p>Follow Peter's story of failure and restoration.</p>
-                <a href="series/restoration.html" class="read-more">Read More</a>
-            </article>
-
-            <article class="series-card">
-                <h3>The Harvest is Plentiful</h3>
-                <p>Based on Matthew 9:35-10:15</p>
-                <p>Participate in God's mission with purpose.</p>
-                <a href="series/purpose.html" class="read-more">Read More</a>
-            </article>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <h2>Connect With Us</h2>
-            <p>Join our community of disciples and receive daily devotionals in your inbox.</p>
-            <form class="contact-form">
-                <input type="email" placeholder="Enter your email" required>
+    </div>
+    <script>
+        // Check if user is authenticated
+        const isAuthenticated = localStorage.getItem('user') !== null;
+        
+        // If not authenticated, redirect to auth page
+        if (!isAuthenticated) {
+            window.location.href = 'auth.html';
+        } else {
+            // If authenticated, redirect to dashboard
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
                 <button type="submit">Subscribe</button>
             </form>
         </section>
