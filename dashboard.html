@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discipleship Devotionals - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Discipleship Devotionals</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="#" id="logoutBtn">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="dashboard-header">
+            <h2>Welcome Back!</h2>
+            <p class="subheader">Continue your discipleship journey</p>
+        </section>
+
+        <div class="dashboard-content">
+            <div class="featured-section">
+                <h3>Featured Devotionals</h3>
+                <div class="devotionals-grid">
+                    <a href="series/index.html" class="devotional-card">
+                        <h4>Discipleship Devotionals</h4>
+                        <p>Explore our collection of devotionals designed to deepen your walk with Christ</p>
+                        <button class="cta-button">Start Your Journey</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="recent-activity">
+                <h3>Your Recent Activity</h3>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <span class="activity-date">Today</span>
+                        <span class="activity-description">Welcome to your dashboard!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 HopeGraceFaith. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

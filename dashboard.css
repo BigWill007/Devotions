@@ -1,0 +1,110 @@
+/* Dashboard Styles */
+.dashboard-header {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, #4361ee, #3f37c9);
+    border-radius: 12px;
+    color: white;
+}
+
+.dashboard-header h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.dashboard-header .subheader {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.dashboard-content {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.featured-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.devotionals-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.devotional-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.devotional-card:hover {
+    transform: translateY(-5px);
+}
+
+.devotional-card h4 {
+    margin: 0 0 1rem 0;
+    color: #333;
+}
+
+.devotional-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.recent-activity {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.activity-list {
+    margin-top: 1.5rem;
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-date {
+    color: #666;
+    font-weight: 500;
+}
+
+.activity-description {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-header {
+        padding: 1.5rem;
+    }
+    
+    .dashboard-header h2 {
+        font-size: 2rem;
+    }
+    
+    .dashboard-content {
+        grid-template-columns: 1fr;
+    }
+}
